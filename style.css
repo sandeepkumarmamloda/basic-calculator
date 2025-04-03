@@ -1,0 +1,182 @@
+:root{
+    --container-ki-height:690px;
+    --container-ki-width:450px;
+    --container-ka-border:1px solid transparent;
+    --container-ki-radius:5%;
+    --container-ka-color:rgba(39, 130, 160, 0.239);
+    /*div[class="inner-container-1"]*/
+    --height-of-ic1:35%;
+    --width-of-ic1:100%;
+    --background-color-of-ic1:rgba(9, 7, 9, 0.536);
+    --border-of-ic1:transparent 1px solid;
+    /* div[class="inner-container-2"]*/
+    --height-of-ic2:60%;
+    --width-of-ic2:90%;
+    --background-color-of-ic2:rgba(180, 173, 173, 0.8);
+    --border-of-ic2:transparent 1px solid;
+    /*.button*/
+    --height-of-button:78%;
+    --width-of-button:80%;
+    --background-color-of-button:rgb(112, 75, 75,0.8);
+    --border-top-left-radius:5%;
+    --border-top-right-radius:5%;
+    --border-bottom-left-radius:5%;
+    --border-bottom-right-radius:5%;
+}
+body,html{
+    height:100%;
+    width:100%;
+    display:flex;
+    flex-direction:row;
+    justify-content:center;
+    flex-wrap:wrap;
+    align-content:center;
+}
+/* code for container */
+div[class="container"]{
+    height:var(--container-ki-height);
+    width:var(--container-ki-width);
+    border:var(--container-ka-border);
+    border-top-left-radius:var(--container-ki-radius);
+    border-top-right-radius:var(--container-ki-radius);
+    border-bottom-right-radius:var(--container-ki-radius);
+    border-bottom-left-radius:var(--container-ki-radius);
+    background-color:var(--container-ka-color);
+    overflow:hidden;
+    display:flex;
+    flex-direction:row;
+    justify-content:center;
+    flex-wrap:wrap;
+    align-content:flex-start;
+}
+/* inner container-1 in html */
+div[class="inner-container-1"]{
+    height:var(--height-of-ic1);
+    width:var(--width-of-ic1);
+    background-color:var(--background-color-of-ic1);
+    border:var(--border-of-ic1);
+    display:flex;
+    flex-direction:row;
+    justify-content:center;
+    flex-wrap:wrap;
+}
+/* input inside inner container-1 */
+div.inner-container-1>input{
+    height:30%;
+    width:80%;
+    padding:0px;
+    margin-top:5%;
+    font-size:18px;
+    text-align:right;
+    outline:none;
+    border:1px solid transparent;
+    border-top-right-radius:5px;
+    border-top-left-radius:5px;
+    border-bottom-left-radius:5px;
+    border-bottom-right-radius:5px;
+    cursor:none;
+    user-select:none;
+}
+/* AC button in calculator */
+.AC{
+    height:20%;
+    width:20%;
+    background-color:rgba(112, 75, 75,0.5);
+    font-size:18px;
+    font-weight:500;
+    color:white;
+    border:1px solid transparent;
+    border-top-right-radius:20%;
+    border-top-left-radius:20%;
+    border-bottom-left-radius:20%;
+    border-bottom-right-radius:20%;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+}
+.AC:active{
+    background-color:rgb(124, 124, 165);
+    border-top-right-radius:10%;
+    border-top-left-radius:10%;
+    border-bottom-left-radius:10%;
+    border-bottom-right-radius:10%;
+    color:pink;
+    font-size:18px;
+    transition-property:all;
+    transition-duration:1ms;
+    transition-delay:20ms;
+    transition-timing-function:ease-in-out;
+}
+/* ON button in calculator */
+.ON{
+    margin-left:5%;
+    height:20%;
+    width:20%;
+    background-color:rgba(112, 75, 75,0.5);
+    font-weight:500;
+    font-size:18px;
+    color:white;
+    border:1px solid transparent;
+    border-top-right-radius:20%;
+    border-top-left-radius:20%;
+    border-bottom-left-radius:20%;
+    border-bottom-right-radius:20%;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+}
+
+/* inner container-2 in html */
+div[class="inner-container-2"]{
+    height:var(--height-of-ic2);
+    width:var(--width-of-ic2);
+    background-color:var(--background-color-of-ic2);
+    border:var(--border-of-ic2);
+    display:grid;
+    grid-template-rows:repeat(4,1fr);
+    grid-template-columns:repeat(5,1fr);
+    align-items:center;
+    justify-items:center;
+}
+/* buttons inside inner container-2 in html */
+.button{
+    height:var(--height-of-button);
+    width:var(--width-of-button);
+    background-color:var(--background-color-of-button);
+    border-top-left-radius:var(--border-top-left-radius);
+    border-top-right-radius:var(--border-top-right-radius);
+    border-bottom-left-radius:var(--border-bottom-left-radius);
+    border-bottom-right-radius:var(--border-bottom-right-radius);
+    display:flex;
+    flex-direction:row;
+    justify-content:center;
+    flex-wrap:wrap;
+    align-content:center;
+    color:ghostwhite;
+    font-weight:900;
+    font-size:larger;
+}
+.plus{
+    grid-row:3/5;
+    grid-column:5/6;
+    height:88%;
+    border-top-left-radius:3%;
+    border-top-right-radius:3%;
+    border-bottom-left-radius:3%;
+    border-bottom-right-radius:3%;
+}
+.button:hover{
+    box-shadow:0px 0px 10px  rgba(112, 75, 75,0.8);
+    height:80%;
+}
+.plus:hover{
+    height:90%;
+}
+/* click karne par changes */
+.button:active{
+    height:77%;
+    width:80%;
+    border-radius:20%;
+}
