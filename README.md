@@ -3,6 +3,8 @@
 A simple web-based calculator built using HTML, CSS, and JavaScript.  
 You can perform basic arithmetic operations like addition, subtraction, multiplication, and division.
 
+I have written all the codes for this by myself without using any AI.
+
 👉 **Live Demo:**  
 [https://sandeepkumarmamloda.github.io/basic-calculator/](https://sandeepkumarmamloda.github.io/basic-calculator/)
 
